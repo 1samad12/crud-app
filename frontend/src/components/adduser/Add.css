@@ -1,0 +1,122 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /* background-color: #f9f9f9; */
+    color: #333;
+  }
+  
+  /* Main Container Styling */
+  .add-user {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* Back Link */
+  .add-user-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .add-user-link:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Heading */
+  h5 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+    background-color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+  }
+  
+  /* Input Fields */
+  .input-filed {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-filed label {
+    background-color: #fff;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .input-filed input {
+      background-color: #fff;
+      padding: 10px;
+      border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.2s;
+  }
+  
+  .input-filed input:focus {
+      background-color: #fff;
+      border-color: #007bff;
+      outline: none;
+  }
+  
+  /* Submit Button */
+  .input-filed button {
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .input-filed button:hover {
+    background-color: #218838;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .add-user {
+      max-width: 90%;
+      padding: 15px;
+    }
+  
+    .add-user-link {
+      font-size: 12px;
+      padding: 6px 10px;
+    }
+  
+    h5 {
+      font-size: 18px;
+    }
+  
+    .input-filed button {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  

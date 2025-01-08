@@ -1,0 +1,173 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Container Styling */
+  .user-table-container {
+    min-height: 20vh;
+    max-width: 65%;
+    margin: 30px auto;
+    padding: 20px;
+    padding-bottom: 350px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+    overflow-x: auto; /* Ensure horizontal scroll for smaller screens */
+  }
+  
+  /* Add User Link */
+  .add-user-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .add-user-link:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Table Styling */
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border-radius: 8px; ;
+    min-width: 600px; /* Ensure table isn't squeezed too much */
+  }
+  
+  .user-table th,
+  .user-table td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .user-table-head th {
+    background-color: #007bff;
+    color: #fff;
+    /* font-weight: bold; */
+    /* text-transform: uppercase; */
+  }
+  
+  .user-table-body tr:nth-child(odd) {
+     background-color: #f2f2f2;
+  }
+  
+  .user-table-body tr:hover {
+    background-color: #eaf4fc;
+  }
+  
+  /* Specific Cell Styling */
+  .user-serial-number {
+    width: 8%;
+    height: 2%;
+    font-size: 17px;
+  }
+  
+  .user-name,
+  .user-email {
+    width: 30%;
+    height: 2%;
+    font-size: 17px;
+
+  }
+  
+  .user-actions {
+    width: 20%;
+    text-align: center;
+  }
+  
+  /* Action Buttons */
+  .action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .delete-button {
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .delete-button:hover {
+    background-color: #c82333;
+  }
+  
+  .edit-link {
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .edit-link:hover {
+    background-color: #218838;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .user-table-container {
+      padding: 15px;
+    }
+  
+    .add-user-link {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  
+    .user-table {
+      font-size: 14px;
+    }
+  
+    .delete-button, 
+    .edit-link {
+      font-size: 12px;
+      padding: 4px 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .user-table {
+      display: block;
+      overflow-x: auto; /* Ensure usability on very small screens */
+    }
+  
+    .action-buttons {
+      flex-direction: column;
+      gap: 5px;
+    }
+  
+    .add-user-link {
+      display: block;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+  }
+  
+  
+  .table-header{
+    text-align: center;
+    align-items: center;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px; ;
+    text-transform: uppercase;
+  }
